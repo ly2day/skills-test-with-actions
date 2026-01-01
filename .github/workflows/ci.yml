@@ -27,7 +27,7 @@ jobs:
         run: |
           npm install remark-cli remark-preset-lint-consistent vf
           npx remark . --use remark-preset-lint-consistent --repo
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: remark-lint-report
           path: remark-lint-report.json
